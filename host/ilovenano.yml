@@ -1,0 +1,8 @@
+---
+ - name: ilovenano
+   hosts: linux
+   tasks:
+     - name: ensure nano is there
+       apk:
+         name: nano
+         state: latest
